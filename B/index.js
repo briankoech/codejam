@@ -1,7 +1,7 @@
 var fs = require('fs');
 var readline = require('readline');
-var input = fs.createReadStream('input-sample.txt');
-var output = fs.createWriteStream('output-sample.txt');
+var input = fs.createReadStream('B-large.in');
+var output = fs.createWriteStream('B-large-output.txt');
 
 rl = readline.createInterface({
     input: input,
@@ -46,6 +46,5 @@ rl.on('line', function(line) {
         }
         output.write('Case #'+ lineNumber +': ' + counter + '\n');
         lineNumber++;
-        console.log(counter, chapos);
     }
 });
