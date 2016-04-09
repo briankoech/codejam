@@ -1,8 +1,8 @@
 var fs = require('fs');
 var readline = require('readline');
 var numb;
-var input = fs.createReadStream('input.txt');
-var output = fs.createWriteStream('output.txt');
+var input = fs.createReadStream('A-large.in');
+var output = fs.createWriteStream('large-output.txt');
 
 var rl = readline.createInterface({
     input: input,
@@ -35,7 +35,7 @@ rl.on('line', function(line) {
                         mynum = mynum.concat(num.toString()[i]).sort();
                     }
                 }
-                
+
                 var is_same = VALS.length === mynum.length && mynum.every(function(val, index) {
                     return val == VALS[index];
                 });
