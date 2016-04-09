@@ -9,6 +9,6 @@
   "author": "Brian Koech",
   "license": "ISC",
   "dependencies": {
-    "stdio": "^0.2.7"
+    
   }
 }
