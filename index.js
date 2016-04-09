@@ -18,7 +18,10 @@ rl.on('line', function(line) {
     } else {
         numb = line;
         var VALS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-        var mynum = numb.toString().split('').sort();
+        var duplicateArray = numb.toString().split('').sort();
+        var mynum = duplicateArray.filter(function(element, pos) {
+            return duplicateArray.indexOf(element) == pos;
+        });
         var num = numb;
         var counter = 1;
         var ok = true;
@@ -32,7 +35,7 @@ rl.on('line', function(line) {
                         mynum = mynum.concat(num.toString()[i]).sort();
                     }
                 }
-                // compare the two arrays
+                
                 var is_same = VALS.length === mynum.length && mynum.every(function(val, index) {
                     return val == VALS[index];
                 });
