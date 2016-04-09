@@ -1,0 +1,14 @@
+{
+  "name": "codejam",
+  "version": "1.0.0",
+  "description": "Google codejam ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Koech",
+  "license": "ISC",
+  "dependencies": {
+    "stdio": "^0.2.7"
+  }
+}
